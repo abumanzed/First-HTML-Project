@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style type="text/css">
+    body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+    height: 100%;
+    width: 500px;
+
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ 
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%; 
+
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+  </style> 
+  <title> Start </title>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div>
+        <h1 style="background-color: #33C7FF;"> ABU-MAN-PAGE </h1>
+  </div>
+  <div class="menu-bar" >
+    
+<ul>
+  <li class="active"><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home </a></li>
+  <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">About Us
+  </a>
+  <div class="sub-menu-1">
+    <ul>
+      <li><a href="#">Mission</a> </li>
+      <li><a href="#">Vission</a> </li>
+      <li class="hover-me"><a href="#">Media</a> 
+        <div class="sub-menu-2">
+    <ul>
+      <li><a href="#">SEO</a> </li>
+      <li><a href="#">SM</a> </li>
+      <li><a href="#">EM</a></li>
+    </ul>
+        </div>
+      </li>
+
+    </ul>
+    
+  </div>
+
+</li>
+  <li><i class="fa fa-users" aria-hidden="true"></i><a href="Client.html">Student</a></li>
+  <li><i class="fa fa-download" aria-hidden="true"></i><a href="#">Download</a></li>
+  <li><i class="fa fa-image" aria-hidden="true"></i><a href="#">Image</a></li>
+  <li><i class="fa fa-phone" aria-hidden="true"></i><a href="#">Contact</a></li>
+  <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="Login.html">Login</a></li>
+</ul>
+
+
+</div>
+<form>  
+  <div class="container">  
+  <center>  <h1> Student Registration Form</h1> </center>  
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Middlename: </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+<div>  
+<label>   
+Course :  
+</label>   
+  
+<select>  
+<option value="Course">Course</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>  
+<option value="M.Tech">M.Tech</option>  
+</select>  
+</div>  
+<div>  
+<label>   
+Gender :  
+</label> 
+<input type="radio" value="Male" name="gender" checked > Male    
+<input type="radio" value="Female" name="gender"> Female 
+  
+</div>  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+Current Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+    <button type="submit" class="registerbtn">Register</button>    
+</form>
+</body>
+</html>
+
+
+
+
+
+
